@@ -14,5 +14,5 @@ git clone https://github.com/adamferrick/dotfiles.git $HOME/.dotfiles
 
 ```sh
 cd ~/.dotfiles
-stow --restow .
+stow --restow --no-folding .
 ```
