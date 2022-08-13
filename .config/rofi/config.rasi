@@ -8,7 +8,7 @@ configuration {
 * {
     bg: #26282A;
     fg: #ffffff;
-    border: #3779bc;
+    border: #3979bc;
 
     background-color: @bg;
     text-color: @fg;
