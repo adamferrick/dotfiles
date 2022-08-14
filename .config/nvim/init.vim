@@ -16,6 +16,11 @@ call plug#end()
 
 
 
+" Space as leader
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+
 set number
 set relativenumber
 
