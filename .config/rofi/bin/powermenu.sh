@@ -1,13 +1,11 @@
 #!/bin/bash
 
 poweroff="Power Off"
-hibernate="Hibernate"
 restart="Restart"
 suspend="Suspend"
 lock="Lock"
-hybrid="Hybrid"
 
-options="$poweroff\n$hibernate\n$restart\n$suspend\n$lock\n$hybrid"
+options="$poweroff\n$restart\n$suspend\n$lock"
 
 chosen="$(echo -e "$options" | rofi -dmenu -i -p 'Selection: ')"
 
@@ -30,22 +28,10 @@ case $chosen in
             light-locker-command -l
         fi
         ;;
-    $hibernate)
-        ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$hibernate"': Are you sure? ')"
-        if [[ "$ans" = "Yes" ]]; then
-            systemctl hibernate
-        fi
-        ;;
     $suspend)
         ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$suspend"': Are you sure? ')"
         if [[ "$ans" = "Yes" ]]; then
             systemctl suspend
-        fi
-        ;;
-    $hybrid)
-        ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$hybrid"': Are you sure? ')"
-        if [[ "$ans" = "Yes" ]]; then
-            systemctl hybrid-sleep
         fi
         ;;
 esac
