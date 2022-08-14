@@ -22,15 +22,6 @@ set expandtab
 set shiftwidth=4 softtabstop=4
 filetype plugin indent on
 
-
-" Workaround for a bug where nvim needs to be resized if launched as the
-" initial command for a terminal
-" autocmd VimEnter * call timer_start(1000, { tid -> execute('silent exec "!kill -s SIGWINCH $PPID"')})
-" autocmd VimEnter * :sleep 2000m
-" autocmd VimEnter * silent exec "!kill -s SIGWINCH $PPID"
-
-
-
 set cursorline
 set background=dark
 colorscheme dim
@@ -46,11 +37,19 @@ au InsertLeave * hi TabLine ctermbg=8
 au InsertLeave * hi TabLineFill ctermbg=8
 au InsertLeave * hi TabLineSel ctermfg=8
 
+" Show vertical line on cursor
 nnoremap <Leader>c :set cursorcolumn!<CR>
 
 
-" file navigation
-nnoremap <Leader>t :Texplore<CR>
+" Copy to system clipboard
+vnoremap <Leader>y "+y
+nnoremap <Leader>y "+y
+
+" Paste from system clipboard
+nnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
 
 
 " Configuring the tabline
