@@ -13,6 +13,9 @@ Plug 'tpope/vim-repeat'
 call plug#end()
 
 
+
+
+
 set number
 set relativenumber
 
@@ -50,6 +53,11 @@ nnoremap <Leader>p "+p
 nnoremap <Leader>P "+P
 vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
+
+
+" Persistent undo
+set undodir=~/.vimdid
+set undofile
 
 
 " Configuring the tabline
