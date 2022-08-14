@@ -39,6 +39,12 @@ element-text {
     text-color: inherit;
 }
 
+listview {
+    lines: 10;
+    dynamic: true;
+    fixed-height: false;
+}
+
 inputbar {
     children: [ prompt, entry ];
     border-color: @border;
