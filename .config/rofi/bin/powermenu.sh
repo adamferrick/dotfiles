@@ -38,7 +38,7 @@ case $chosen in
     $lock)
         ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$lock"': Are you sure? ')"
         if [[ "$ans" = "Yes" ]]; then
-            light-locker-command -l
+            ~/.config/i3/bin/lock.sh
         fi
         ;;
 esac
