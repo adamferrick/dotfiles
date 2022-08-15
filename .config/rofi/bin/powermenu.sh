@@ -2,10 +2,11 @@
 
 poweroff="Power Off"
 restart="Restart"
+logout="Log Out"
 suspend="Suspend"
 lock="Lock"
 
-options="$poweroff\n$restart\n$suspend\n$lock"
+options="$poweroff\n$restart\n$logout\n$suspend\n$lock"
 
 chosen="$(echo -e "$options" | rofi -dmenu -i -p 'Selection: ')"
 
@@ -22,16 +23,22 @@ case $chosen in
             systemctl reboot
         fi
         ;;
-    $lock)
-        ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$lock"': Are you sure? ')"
+    $logout)
+        ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$logout"': Are you sure? ')"
         if [[ "$ans" = "Yes" ]]; then
-            light-locker-command -l
+            loginctl terminate-session $XDG_SESSION_ID
         fi
         ;;
     $suspend)
         ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$suspend"': Are you sure? ')"
         if [[ "$ans" = "Yes" ]]; then
             systemctl suspend
+        fi
+        ;;
+    $lock)
+        ans="$(echo -e 'No\nYes' | rofi -dmenu -i -p "$lock"': Are you sure? ')"
+        if [[ "$ans" = "Yes" ]]; then
+            light-locker-command -l
         fi
         ;;
 esac
