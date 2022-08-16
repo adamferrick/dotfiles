@@ -8,7 +8,7 @@ lock="Lock"
 
 options="$poweroff\n$restart\n$logout\n$suspend\n$lock"
 
-chosen="$(echo -e "$options" | rofi -dmenu -i -p 'Selection: ')"
+chosen="$(echo -e "$options" | rofi -dmenu -i -p '> ')"
 
 case $chosen in
     $poweroff)

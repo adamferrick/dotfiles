@@ -40,9 +40,7 @@ element-text {
 }
 
 listview {
-    lines: 10;
-    dynamic: true;
-    fixed-height: false;
+    lines: 6;
 }
 
 inputbar {
