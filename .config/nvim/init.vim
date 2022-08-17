@@ -34,6 +34,9 @@ set cursorline
 set background=dark
 colorscheme dim
 
+" use mouse
+set mouse=a
+
 
 " Show vertical line on cursor
 nnoremap <Leader>c :set cursorcolumn!<CR>
