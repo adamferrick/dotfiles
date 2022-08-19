@@ -37,6 +37,9 @@ colorscheme dim
 " use mouse
 set mouse=a
 
+set title
+set titlestring=%m\ %t\ (%f)\ -\ Neovim
+
 
 " Show vertical line on cursor
 nnoremap <Leader>c :set cursorcolumn!<CR>
