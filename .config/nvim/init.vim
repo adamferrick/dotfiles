@@ -4,7 +4,7 @@ call plug#begin()
 
 Plug 'jeffkreeftmeijer/vim-dim'
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': 'TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'tpope/vim-surround'
 
