@@ -5,5 +5,6 @@ bind F hint -w
 bind S fillcmdline winopen search
 bind O fillcmdline winopen
 bind t fillcmdline tab 
+bind b fillcmdline bmarks 
 
 guiset_quiet tabs none, guiset_quiet navbar none
