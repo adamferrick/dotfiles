@@ -10,3 +10,5 @@ if status is-login
 end
 
 set -g fish_greeting
+
+fish_add_path ~/.ghcup/bin
