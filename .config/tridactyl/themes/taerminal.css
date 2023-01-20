@@ -25,7 +25,7 @@
 
     /* Hint character tags */
     --tridactyl-hintspan-fg: var(--black) !important;
-    --tridactyl-hintspan-bg: var(--green) !important;
+    --tridactyl-hintspan-bg: var(--yellow) !important;
 
     /* Element Highlights */
     --tridactyl-hint-active-fg: none;
@@ -87,7 +87,7 @@
 }
 
 .TridactylModehint {
-    background: var(--green) !important;
+    background: var(--yellow) !important;
 }
 
 #completions .focused {
