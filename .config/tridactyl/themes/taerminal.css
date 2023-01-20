@@ -18,7 +18,7 @@
 
     --tridactyl-fg: #f0f0f0;
     --tridactyl-bg: var(--black);
-    --tridactyl-url-fg: var(--bright-red);
+    --tridactyl-url-fg: var(--blue);
     --tridactyl-url-bg: var(--tridactyl-bg);
     --tridactyl-highlight-box-bg: var(--bright-green);
     --tridactyl-highlight-box-fg: var(--black);
@@ -91,11 +91,11 @@
 }
 
 #completions .focused {
-    background: var(--bright-green);
+    background: var(--blue);
     color: var(--black);
 }
 
 #completions .focused .url {
-    background: var(--bright-green);
+    background: var(--blue);
     color: var(--black);
 }
