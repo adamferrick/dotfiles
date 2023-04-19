@@ -12,3 +12,14 @@ end
 set -g fish_greeting
 
 fish_add_path ~/.ghcup/bin
+
+
+
+fish_vi_key_bindings
+
+function fish_mode_prompt
+end
+
+set fish_cursor_default block
+set fish_cursor_insert line
+set fish_cursor_replace underscore
