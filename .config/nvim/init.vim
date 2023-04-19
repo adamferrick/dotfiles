@@ -63,10 +63,17 @@ set undofile
 
 " Configuring the statusline
 
-hi StatusLine ctermfg=15 ctermbg=8
+hi StatusLine ctermfg=15
 
-au InsertEnter * hi StatusLine ctermbg=1
-au InsertLeave * hi StatusLine ctermbg=8
+function SetStatusBg()
+  if &mod == 1
+    hi StatusLine ctermbg=1
+  else
+    hi StatusLine ctermbg=8
+  endif
+endfunction
+
+au TextChanged,TextChangedI,BufWritePost,BufEnter * :call SetStatusBg()
 
 set laststatus=2
 set statusline=
