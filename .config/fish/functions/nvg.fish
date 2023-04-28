@@ -1,3 +1,4 @@
+# fuzzy grep open
 function nvg
     set match $(
         ag --nobreak --noheading -i $argv |

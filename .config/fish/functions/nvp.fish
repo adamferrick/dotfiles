@@ -1,3 +1,4 @@
+# fuzzy path name open
 function nvp
     set file $(
         find $argv -type f |

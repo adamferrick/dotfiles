@@ -1,3 +1,4 @@
+# fuzzy tags open
 function nvt
     [ -e tags ] &&
     set line $(
