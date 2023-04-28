@@ -1,4 +1,4 @@
-function ft
+function nvt
     [ -e tags ] &&
     set line $(
         awk 'BEGIN { FS="\t" } !/^!/ {print toupper($4)"\t"$1"\t"$2"\t"$3}' tags |
