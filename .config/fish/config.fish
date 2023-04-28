@@ -23,3 +23,5 @@ end
 set fish_cursor_default block
 set fish_cursor_insert line
 set fish_cursor_replace underscore
+
+abbr -a ntags ctags --excmd=number
