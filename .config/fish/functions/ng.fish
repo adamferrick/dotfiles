@@ -4,7 +4,6 @@ function ng
     set AG_PREFIX ag --nobreak --noheading --silent -i
     $AG_PREFIX $argv |
         fzf --ansi \
-            --color "hl:-1:underline,hl+:-1:underline:reverse" \
             --disabled --query "$argv" \
             --bind "change:reload:sleep 0.1; $AG_PREFIX {q} || true" \
             --bind "ctrl-f:unbind(change,ctrl-f)+change-prompt(2. fzf> )+enable-search+rebind(ctrl-r)+transform-query(echo {q} > /tmp/ag-fzf-r; cat /tmp/ag-fzf-f)" \

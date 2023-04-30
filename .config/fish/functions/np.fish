@@ -4,7 +4,6 @@ function np
     set FIND_INLINE 'find {q} -type f'
     find $argv -type f |
         fzf \
-            --color "hl:-1:underline,hl+:-1:underline:reverse" \
             --disabled --query "$argv" \
             --bind "change:reload:sleep 0.1; $FIND_INLINE || true" \
             --bind "ctrl-f:unbind(change,ctrl-f)+change-prompt(2. fzf> )+enable-search+rebind(ctrl-r)+transform-query(echo {q} > /tmp/find-fzf-r; cat /tmp/find-fzf-f)" \
