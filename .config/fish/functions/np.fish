@@ -2,7 +2,6 @@
 function np
     find $argv -type f |
         fzf \
-            --disabled --query "$argv" \
             --delimiter : \
             --layout "reverse" \
             --height '95%' \

@@ -3,7 +3,6 @@ function ng
     set AG_PREFIX ag --nobreak --noheading --silent -i
     ag --nobreak --noheading --silent -i $argv |
         fzf --ansi \
-            --disabled --query "$argv" \
             --delimiter : \
             --layout "reverse" \
             --height '95%' \
