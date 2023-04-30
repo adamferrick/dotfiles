@@ -1,5 +1,5 @@
 # fuzzy path name open
-function nvp
+function np
     rm -f /tmp/find-fzf-{r,f}
     set FIND_INLINE 'find {q} -type f'
     find $argv -type f |

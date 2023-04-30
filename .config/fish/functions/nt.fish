@@ -1,5 +1,5 @@
 # fuzzy tags open
-function nvt
+function nt
     [ -e tags ] &&
     awk 'BEGIN { FS="\t" } !/^!/ {print toupper($4)"\t"$1"\t"$2"\t"$3}' tags |
     string replace -r ';"$' '' |

@@ -1,5 +1,5 @@
 # fuzzy grep open with ag
-function nvg
+function ng
     rm -f /tmp/ag-fzf-{r,f}
     set AG_PREFIX ag --nobreak --noheading --silent -i
     $AG_PREFIX $argv |
