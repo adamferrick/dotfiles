@@ -1,7 +1,6 @@
-# fuzzy grep open with ag
+# fuzzy grep open with ripgrep
 function ng
-    set AG_PREFIX ag --nobreak --noheading --silent -i
-    ag --nobreak --noheading --silent -i $argv |
+    rg --color=always --line-number --no-heading --smart-case $argv |
         fzf --ansi \
             --delimiter : \
             --layout "reverse" \
