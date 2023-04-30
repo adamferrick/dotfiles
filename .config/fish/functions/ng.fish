@@ -12,7 +12,9 @@ function ng
             --prompt '1. grep> ' \
             --delimiter : \
             --header '╱ CTRL-R (grep mode) ╱ CTRL-F (fzf mode) ╱' \
+            --layout "reverse" \
+            --height '95%' \
             --preview 'bat --color=always {1} --highlight-line {2}' \
-            --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
+            --preview-window 'down,60%,border-top,+{2}+3/3,~3' \
             --bind 'enter:become(nvim {1} +{2})'
 end

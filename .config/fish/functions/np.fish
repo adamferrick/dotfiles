@@ -12,7 +12,9 @@ function np
             --prompt '1. find> ' \
             --delimiter : \
             --header '╱ CTRL-R (find mode) ╱ CTRL-F (fzf mode) ╱' \
+            --layout "reverse" \
+            --height '95%' \
             --preview 'bat --color=always {1}' \
-            --preview-window 'up,60%,border-bottom' \
+            --preview-window 'down,60%,border-top' \
             --bind 'enter:become(nvim {1})'
 end

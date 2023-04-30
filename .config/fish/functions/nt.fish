@@ -5,7 +5,9 @@ function nt
     string replace -r ';"$' '' |
     fzf \
         --with-nth=2 \
-        --preview-window "up,60%,border-bottom,+{4}+3/3,~3" \
+        --layout "reverse" \
+        --height '95%' \
+        --preview-window "down,60%,border-top,+{4}+3/3,~3" \
         --preview "bat --color=always {3} --highlight-line {4}" \
         --bind "enter:become(nvim {3} +{4})"
 end
