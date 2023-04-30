@@ -1,5 +1,5 @@
-# fuzzy path name open
-function np
+# fuzzy open in nvim using find
+function nf
     find $argv -type f |
         fzf \
             --delimiter : \
