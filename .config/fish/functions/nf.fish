@@ -8,5 +8,5 @@ function nf
             --height '95%' \
             --preview 'bat --color=always {1}' \
             --preview-window 'down,60%,border-top' \
-    ) && nvim "$file"
+    ) && nvim $(echo "$file" | sed 's/^\.\///')
 end
