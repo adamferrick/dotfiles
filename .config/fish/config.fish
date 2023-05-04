@@ -35,7 +35,7 @@ set fish_cursor_replace underscore
 
 
 
-abbr -a ntags ctags --excmd=number
+abbr -a --position anywhere ntags ctags --excmd=number
 
 
 
