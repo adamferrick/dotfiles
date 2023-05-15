@@ -44,18 +44,6 @@ set titlestring=%m\ %t\ (%f)\ -\ Neovim
 " Show vertical line on cursor
 nnoremap <Leader>c :set cursorcolumn!<CR>
 
-
-" Copy to system clipboard
-vnoremap <Leader>y "+y
-nnoremap <Leader>y "+y
-
-" Paste from system clipboard
-nnoremap <Leader>p "+p
-nnoremap <Leader>P "+P
-vnoremap <Leader>p "+p
-vnoremap <Leader>P "+P
-
-
 " Persistent undo
 set undodir=~/.vimdid
 set undofile
