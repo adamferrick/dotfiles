@@ -10,6 +10,8 @@ configuration {
     fg: #ffffff;
     border: #3979bc;
 
+    font: "BlexMono Nerd Font 11";
+
     background-color: @bg;
     text-color: @fg;
 }
