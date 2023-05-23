@@ -9,6 +9,7 @@ configuration {
     bg: #26282A;
     fg: #ffffff;
     border: #3979bc;
+    border-alt: #555555;
 
     font: "BlexMono Nerd Font 11";
 
@@ -19,6 +20,8 @@ configuration {
 window {
     width: 100%;
     location: south;
+    border-color: @border-alt;
+    border: 1px;
 }
 
 mainbox {
@@ -27,7 +30,6 @@ mainbox {
 }
 
 element {
-    background-color: @bg;
     padding: 3px 40px;
 }
 
@@ -37,7 +39,6 @@ element selected {
 }
 
 element-text {
-    background-color: inherit;
     text-color: inherit;
 }
 
@@ -50,12 +51,4 @@ inputbar {
     border-color: @border;
     border: 2px;
     padding: 5px;
-}
-
-entry {
-    background-color: inherit;
-}
-
-prompt {
-    background-color: inherit;
 }
