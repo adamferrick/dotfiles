@@ -5,8 +5,7 @@ function nt
         awk 'BEGIN { FS="\t" } !/^!/ {print toupper($4)"\t"$1"\t"$2"\t"$3}' tags |
         string replace -r ';"$' '' |
         fzf \
-            --with-nth=2,3 \
-            --nth=1 \
+            --with-nth=1,2,3 \
             --layout "reverse" \
             --height '95%' \
             --preview-window "down,60%,border-top,+{4}+3/3,~3" \
