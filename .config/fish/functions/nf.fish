@@ -1,8 +1,9 @@
 # fuzzy open in nvim using find
 function nf
     set file $(
-        find $argv -type f |
+        fd -t f --color=always $argv |
         fzf \
+            --ansi \
             --delimiter : \
             --layout "reverse" \
             --height '95%' \
