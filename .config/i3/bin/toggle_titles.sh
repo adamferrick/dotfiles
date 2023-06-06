@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/sh
 
 destination="$(readlink ~/.config/i3/titles.conf)"
 
