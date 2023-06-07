@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # fzfmenu - fzf as dmenu replacement
 
 # fifos are here to not wait for end of input
