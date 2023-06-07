@@ -19,6 +19,7 @@ set -g fish_greeting
 
 
 fish_add_path ~/.ghcup/bin
+fish_add_path ~/.local/bin
 
 
 
