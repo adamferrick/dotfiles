@@ -60,7 +60,7 @@ set -l bright_magenta '#ffc6ff'
 set -l bright_cyan '#c0e9f8'
 set -l bright_white '#ffffff'
 
-set -l FZF_NON_COLOR_OPTS
+set -l FZF_NON_COLOR_OPTS "--layout 'reverse' --height '95%'"
 
 for arg in (echo $FZF_DEFAULT_OPTS | tr " " "\n")
     if not string match -q -- "--color*" $arg

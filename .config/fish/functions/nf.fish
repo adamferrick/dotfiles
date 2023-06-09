@@ -5,8 +5,6 @@ function nf
         fzf \
             --ansi \
             --delimiter : \
-            --layout "reverse" \
-            --height '95%' \
             --preview 'bat --color=always {1}' \
             --preview-window 'down,60%,border-top' \
     ) && nvim $(echo "$file" | sed 's/^\.\///')
