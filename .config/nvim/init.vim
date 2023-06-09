@@ -63,6 +63,10 @@ endfunction
 
 au TextChanged,TextChangedI,BufWritePost,BufEnter * :call SetStatusBg()
 
+hi MatchParen ctermbg=4
+au InsertEnter * :hi MatchParen ctermbg=NONE
+au InsertLeave * :hi MatchParen ctermbg=4
+
 set laststatus=2
 set statusline=
 set statusline+=\ %f
