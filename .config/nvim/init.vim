@@ -34,6 +34,12 @@ set cursorline
 set background=dark
 colorscheme dim
 
+hi MatchParen ctermbg=8
+au InsertEnter * :hi MatchParen ctermbg=NONE
+au InsertLeave * :hi MatchParen ctermbg=8
+
+hi Search ctermbg=8
+
 " use mouse
 set mouse=a
 
@@ -62,10 +68,6 @@ function SetStatusBg()
 endfunction
 
 au TextChanged,TextChangedI,BufWritePost,BufEnter * :call SetStatusBg()
-
-hi MatchParen ctermbg=4
-au InsertEnter * :hi MatchParen ctermbg=NONE
-au InsertLeave * :hi MatchParen ctermbg=4
 
 set laststatus=2
 set statusline=
