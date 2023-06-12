@@ -43,22 +43,24 @@ abbr -a --position anywhere ff firefox --new-window
 
 # Color scheme for fzf
 
-set -l black '#26282a'
-set -l red '#ff8878'
-set -l green '#b4fb73'
-set -l yellow '#fffcb7'
-set -l blue '#8bbce5'
-set -l magenta '#ffb2fe'
-set -l cyan '#a2e1f8'
-set -l white '#f1f1f1'
-set -l bright_black '#6f6f6f'
-set -l bright_red '#fe978b'
-set -l bright_green '#d6fcba'
-set -l bright_yellow '#fffed5'
-set -l bright_blue '#c2e3ff'
-set -l bright_magenta '#ffc6ff'
-set -l bright_cyan '#c0e9f8'
-set -l bright_white '#ffffff'
+set -l bg '#0f141a'
+set -l fg '#f6f6f6'
+set -l black '#131310'
+set -l red '#9c3e3e'
+set -l green '#788251'
+set -l yellow '#d17c32'
+set -l blue '#35558c'
+set -l magenta '#bd679f'
+set -l cyan '#2c9db7'
+set -l white '#3f3f4d'
+set -l bright_black '#5c6666'
+set -l bright_red '#cf6772'
+set -l bright_green '#abb58d'
+set -l bright_yellow '#e1ae68'
+set -l bright_blue '#5c8ecc'
+set -l bright_magenta '#e89df2'
+set -l bright_cyan '#74ddf2'
+set -l bright_white '#edf0e4'
 
 set -l FZF_NON_COLOR_OPTS "--layout 'reverse' --height '95%'"
 
@@ -69,6 +71,6 @@ for arg in (echo $FZF_DEFAULT_OPTS | tr " " "\n")
 end
 
 set -Ux FZF_DEFAULT_OPTS "$FZF_NON_COLOR_OPTS"\
-" --color=bg+:$black,bg:$black,spinner:$bright_blue,hl:$red"\
-" --color=fg:$blue,header:$magenta,info:$bright_green,pointer:$bright_green"\
-" --color=marker:$bright_red,fg+:$cyan,prompt:$bright_green,hl+:$bright_red"
+" --color=bg+:$bg,bg:$bg,spinner:$bright_blue,hl:$bright_red"\
+" --color=fg:$bright_blue,header:$bright_magenta,info:$bright_green,pointer:$bright_green"\
+" --color=marker:$bright_red,fg+:$bright_cyan,prompt:$bright_green,hl+:$bright_red"

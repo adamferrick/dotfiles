@@ -332,37 +332,37 @@ font:
   # regardless of their background color.
   #transparent_background_colors: false
 
-# Colors (Taerminal)
+# Colors (Galileo)
 colors:
   # Default colors
   primary:
-    background: '0x26282a'
-    foreground: '0xf0f0f0'
+    background: '0x0f141a'
+    foreground: '0xf6f6f6'
   cursor:
-    background: '0xf0f0f0'
-    foreground: '0x26282a'
+    background: '0xf6f6f6'
+    foreground: '0x0f141a'
 
   # Normal colors
   normal:
-    black:   '0x26282a'
-    red:     '0xff8878'
-    green:   '0xb4fb73'
-    yellow:  '0xfffcb7'
-    blue:    '0x8bbce5'
-    magenta: '0xffb2fe'
-    cyan:    '0xa2e1f8'
-    white:   '0xf1f1f1'
+    black:   '0x131310'
+    red:     '0x9c3e3e'
+    green:   '0x788251'
+    yellow:  '0xd17c32'
+    blue:    '0x35558c'
+    magenta: '0xbd679f'
+    cyan:    '0x2c9bd7'
+    white:   '0x3f3f4d'
 
   # Bright colors
   bright:
-    black:   '0x6f6f6f'
-    red:     '0xfe978b'
-    green:   '0xd6fcba'
-    yellow:  '0xfffed5'
-    blue:    '0xc2e3ff'
-    magenta: '0xffc6ff'
-    cyan:    '0xc0e9f8'
-    white:   '0xffffff'
+    black:   '0x5c6666'
+    red:     '0xcf6772'
+    green:   '0xabb58d'
+    yellow:  '0xe1ae68'
+    blue:    '0x5c8ecc'
+    magenta: '0xe89df2'
+    cyan:    '0x74ddf2'
+    white:   '0xedf0e4'
 
 # Bell
 #

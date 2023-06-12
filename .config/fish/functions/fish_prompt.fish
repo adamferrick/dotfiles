@@ -1,29 +1,31 @@
 function fish_prompt
     printf '\n'
 
-    set_color black
-    set_color -b green
+    set_color normal
+    set_color -b blue
     printf ' %s@%s ' $USER $hostname
 
-    set_color green
-    set_color -b yellow
+    set_color blue
+    set_color -b green
     printf ''
 
-    set_color black
+    set_color normal
+    set_color -b green
     printf ' %s ' $PWD
 
     set_color normal
-    set_color yellow
+    set_color green
 
     if git rev-parse --git-dir > /dev/null 2>&1
-        set_color -b cyan
+        set_color -b red
         printf ''
 
-        set_color black
+        set_color normal
+        set_color -b red
         printf '%s ' (fish_git_prompt)
 
         set_color normal
-        set_color cyan
+        set_color red
     end
 
     printf ''

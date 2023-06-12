@@ -63,7 +63,7 @@ function SetStatusBg()
   if &mod == 1
     hi StatusLine ctermbg=1
   else
-    hi StatusLine ctermbg=8
+    hi StatusLine ctermbg=4
   endif
 endfunction
 
