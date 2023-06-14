@@ -344,7 +344,7 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x131310'
+    black:   '0x0f141a'
     red:     '0x9c3e3e'
     green:   '0x788251'
     yellow:  '0xd17c32'
@@ -362,7 +362,7 @@ colors:
     blue:    '0x5c8ecc'
     magenta: '0xe89df2'
     cyan:    '0x74ddf2'
-    white:   '0xedf0e4'
+    white:   '0xf6f6f6'
 
 # Bell
 #
