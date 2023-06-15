@@ -2,8 +2,6 @@
 
 call plug#begin()
 
-Plug 'jeffkreeftmeijer/vim-dim'
-
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'tpope/vim-surround'
@@ -32,11 +30,7 @@ filetype plugin indent on
 
 set cursorline
 set background=dark
-colorscheme dim
-
-hi MatchParen ctermbg=8
-au InsertEnter * :hi MatchParen ctermbg=NONE
-au InsertLeave * :hi MatchParen ctermbg=8
+colorscheme callisto
 
 hi Search ctermbg=8
 
@@ -54,20 +48,6 @@ nnoremap <Leader>c :set cursorcolumn!<CR>
 set undodir=~/.vimdid
 set undofile
 
-
-" Configuring the statusline
-
-hi StatusLine ctermfg=15
-
-function SetStatusBg()
-  if &mod == 1
-    hi StatusLine ctermbg=1
-  else
-    hi StatusLine ctermbg=4
-  endif
-endfunction
-
-au TextChanged,TextChangedI,BufWritePost,BufEnter * :call SetStatusBg()
 
 set laststatus=2
 set statusline=
