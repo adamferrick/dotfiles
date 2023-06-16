@@ -350,7 +350,7 @@ colors:
     yellow:  '0xd17c32'
     blue:    '0x35558c'
     magenta: '0xbd679f'
-    cyan:    '0x2c9bd7'
+    cyan:    '0x51a3b8'
     white:   '0x3f3f4d'
 
   # Bright colors
@@ -361,7 +361,7 @@ colors:
     yellow:  '0xe1ae68'
     blue:    '0x5c8ecc'
     magenta: '0xe89df2'
-    cyan:    '0x74ddf2'
+    cyan:    '0x95e0ed'
     white:   '0xf6f6f6'
 
 # Bell
