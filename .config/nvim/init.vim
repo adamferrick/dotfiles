@@ -4,6 +4,8 @@ call plug#begin()
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'nvim-treesitter/playground'
+
 Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-repeat'
