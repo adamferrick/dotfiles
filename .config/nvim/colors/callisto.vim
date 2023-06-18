@@ -66,7 +66,7 @@ hi Constant ctermfg=9
 hi Error ctermfg=15 ctermbg=1
 hi Function ctermfg=11 cterm=italic
 hi Identifier ctermfg=12 cterm=NONE
-hi Keyword ctermfg=8
+hi Keyword ctermfg=5
 hi Label ctermfg=5
 hi Operator ctermfg=13
 hi PreCondit ctermfg=3
