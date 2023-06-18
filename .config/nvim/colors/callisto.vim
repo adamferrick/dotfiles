@@ -36,7 +36,7 @@ au TextChanged,TextChangedI,BufWritePost,BufEnter * :call SetStatusBg()
 
 
 " Ui chrome highlights
-hi LineNr ctermfg=8
+hi LineNr ctermfg=7
 hi CursorLineNr ctermfg=4 cterm=bold,underline,italic
 hi ColorColumn ctermbg=1
 hi CursorColumn ctermbg=7
@@ -61,12 +61,12 @@ hi! link Special Operator
 hi! link Macro Function
 hi! link Statement Function
 
-hi Comment ctermfg=8
+hi Comment ctermfg=7
 hi Constant ctermfg=9
 hi Error ctermfg=15 ctermbg=1
 hi Function ctermfg=11 cterm=italic
 hi Identifier ctermfg=12 cterm=NONE
-hi Keyword ctermfg=2
+hi Keyword ctermfg=8
 hi Label ctermfg=5
 hi Operator ctermfg=13
 hi PreCondit ctermfg=3
