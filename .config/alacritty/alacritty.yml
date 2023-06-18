@@ -351,11 +351,11 @@ colors:
     blue:    '0x396c9e'
     magenta: '0x8c81c9'
     cyan:    '0x519ca6'
-    white:   '0x485251'
+    white:   '0xbbb1b1'
 
   # Bright colors
   bright:
-    black:   '0xbbb1b1'
+    black:   '0x485251'
     red:     '0xe06a46'
     green:   '0xc3db69'
     yellow:  '0xe8c95a'

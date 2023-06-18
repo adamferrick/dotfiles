@@ -6,8 +6,8 @@
     --blue: #396c9e;
     --magenta: #655d91;
     --cyan: #519ca6;
-    --white: #485251;
-    --bright-black: #bbb1b1;
+    --white: #bbb1b1;
+    --bright-black: #485251;
     --bright-red: #e06a46;
     --bright-green: #c3db69;
     --bright-yellow: #e8c95a;
@@ -31,7 +31,7 @@
     --tridactyl-hint-active-fg: none;
     --tridactyl-hint-active-bg: none;
     --tridactyl-hint-active-outline: none;
-    --tridactyl-hint-bg: none;
+    --tridactyl-hint-bg: var(--tridactyl-bg);
     --tridactyl-hint-outline: none;
 }
 
@@ -89,18 +89,6 @@
 .TridactylModehint {
     background: var(--yellow) !important;
 }
-
-/*
-#completions .focused {
-    background: var(--blue);
-    color: var(--white);
-}
-
-#completions .focused .url {
-    background: var(--blue);
-    color: var(--white);
-}
-*/
 
 .focused {
     background: var(--blue);
