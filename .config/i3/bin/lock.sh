@@ -1,9 +1,9 @@
 #!/bin/sh
 
-BACKGROUND='#26282a'
-TEXT='#ffffff'
-PRIMARY='#555555'
-SECONDARY='#3979bc'
+BACKGROUND='#0f141a'
+TEXT='#f6f6f6'
+PRIMARY='#485251'
+SECONDARY='#396c9e'
 
 i3lock \
 --color=$BACKGROUND          \
