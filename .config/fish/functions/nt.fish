@@ -22,7 +22,7 @@ function nt
                         break
                 }
                 normal = "\033[94m";
-                print color,$1,normal,"\t"$2"\t"$3"\t",color,$4"\t",normal,$5
+                print color,$1,normal,"\t"$2"\t"$3"\t",color,$4,normal,"\t"$5
             }
         ' tags |
         column -t |

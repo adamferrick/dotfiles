@@ -62,15 +62,7 @@ set -l bright_magenta '#e89df2'
 set -l bright_cyan '#a7e7eb'
 set -l bright_white '#f6f6f6'
 
-set -l FZF_NON_COLOR_OPTS "--layout 'reverse' --height '95%'"
-
-for arg in (echo $FZF_DEFAULT_OPTS | tr " " "\n")
-    if not string match -q -- "--color*" $arg
-        set -a FZF_NON_COLOR_OPTS $arg
-    end
-end
-
-set -Ux FZF_DEFAULT_OPTS "$FZF_NON_COLOR_OPTS"\
-" --color=bg+:$bg,bg:$bg,spinner:$bright_blue,hl:$bright_red"\
-" --color=fg:$bright_blue,header:$bright_magenta,info:$bright_green,pointer:$bright_green"\
-" --color=marker:$bright_red,fg+:$bright_cyan,prompt:$bright_green,hl+:$bright_red"
+set -x FZF_DEFAULT_OPTS "--layout 'reverse' --height '95%'"\
+" --color=bg+:$bg,bg:$bg,spinner:$bright_blue,hl:bold:underline:italic:-1"\
+" --color=fg:$fg,header:$bright_magenta,info:$bright_green,pointer:$bright_blue"\
+" --color=marker:$bright_blue,fg+:$fg:bold:underline:italic,prompt:$bright_blue,hl+:reverse:-1"
