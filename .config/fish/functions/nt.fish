@@ -14,6 +14,9 @@ function nt
                     case "c":
                         color = "\033[92m";
                         break
+                    case "P":
+                        color = "\033[93m";
+                        break
                     case "f":
                         color = "\033[93m";
                         break
@@ -21,7 +24,7 @@ function nt
                         color = "\033[94m";
                         break
                 }
-                normal = "\033[94m";
+                normal = "\033[97m";
                 print color,$1,normal,"\t"$2"\t"$3"\t",color,$4,normal,"\t"$5
             }
         ' tags |
