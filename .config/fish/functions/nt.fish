@@ -25,7 +25,9 @@ function nt
                         break
                 }
                 normal = "\033[97m";
-                print color,$1,normal,"\t"$2"\t"$3"\t",color,$4,normal,"\t"$5
+                path = "\033[35m";
+                line = "\033[32m";
+                print color,$1,normal,"\t",path,$2,normal,"\t",line,$3,normal,"\t",color,$4,normal,"\t"$5
             }
         ' tags |
         column -t |
