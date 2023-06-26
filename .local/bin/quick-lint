@@ -1,0 +1,13 @@
+#!/bin/python3
+
+import os
+import json
+import subprocess
+
+with open(os.path.expanduser('~/.config/quick-lint/linters.json')) as fp:
+    config = json.load(fp)
+    fp.close()
+
+    for linter in config['linters']:
+        if os.path.exists(linter['exists']):
+            subprocess.run(linter['command'], shell=True)

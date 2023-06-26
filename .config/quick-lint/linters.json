@@ -1,0 +1,14 @@
+{
+  "linters": [
+    {
+      "name": "eslint",
+      "command": "npx eslint -f ~/.config/quick-lint/lib/eslint-formatter-quick.js .",
+      "exists": ".eslintrc.js"
+    },
+    {
+      "name": "cargo",
+      "command": "cargo check -q --message-format json 2>/dev/null | python3 ~/.config/quick-lint/lib/cargo-check.py",
+      "exists": "Cargo.toml"
+    }
+  ]
+}
