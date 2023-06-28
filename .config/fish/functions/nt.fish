@@ -30,12 +30,12 @@ function nt
                 print color,$1,normal,"\t",path,$2,normal,"\t",line,$3,normal,"\t",color,$4,normal,"\t"$5
             }
         ' tags |
-        column -t |
+        column -t -s \t |
         string replace -r ';"' '' |
         fzf \
             --ansi \
             --preview-window "down,60%,border-top,+{3}+3/3,~3" \
-            --preview "bat --color=always {2} --highlight-line {3}" |
+            --preview "bat --color=always {-3} --highlight-line {-2}" |
         string replace -a -r '  +' '\t'
     ) && nvim $(echo "$line" | cut -f2) -c "silent tag $(echo "$line" | cut -f1)"
 end
