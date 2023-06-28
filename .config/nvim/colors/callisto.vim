@@ -60,6 +60,11 @@ hi! link Special Operator
 
 hi! link Macro Function
 hi! link Statement Function
+hi! link htmlTagN Operator
+hi! link htmlTag Operator
+hi! link htmlEndTag Operator
+hi! link htmlTagN Operator
+hi! link htmlTagName Identifier
 
 hi Comment ctermfg=8
 hi Constant ctermfg=9
@@ -76,3 +81,4 @@ hi SpecialComment ctermfg=15
 hi Type ctermfg=10
 hi Todo ctermfg=4
 hi Underlined cterm=underline
+hi Title ctermfg=13 cterm=bold,italic
