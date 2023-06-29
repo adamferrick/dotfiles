@@ -1,7 +1,7 @@
 # fuzzy open open from linter results using the ~/,local/bin/quick-lint script
 function nq
     set line $(
-        quick-lint |
+        quick-lint $argv |
         fzf --ansi \
             --delimiter : \
             --preview 'bat --color=always {1} --highlight-line {2}' \

@@ -1,8 +1,14 @@
 #!/bin/python3
 
+# Calls the 'command' field in linters.json if the file in the 'exists' field is found.
+#
+# Arguments provided to this script are substituted into 'command' using str.format syntax.
+# This can be used to specify CLI options for linters.
+
 import os
 import json
 import subprocess
+import sys
 
 with open(os.path.expanduser('~/.config/quick-lint/linters.json')) as fp:
     config = json.load(fp)
@@ -10,4 +16,4 @@ with open(os.path.expanduser('~/.config/quick-lint/linters.json')) as fp:
 
     for linter in config['linters']:
         if os.path.exists(linter['exists']):
-            subprocess.run(linter['command'], shell=True)
+            subprocess.run(linter['command'].format(' '.join(sys.argv[1:])), shell=True)

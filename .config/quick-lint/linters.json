@@ -2,7 +2,7 @@
   "linters": [
     {
       "name": "eslint",
-      "command": "npx eslint -f ~/.config/quick-lint/lib/eslint-formatter-quick.js .",
+      "command": "npx eslint -f ~/.config/quick-lint/lib/eslint-formatter-quick.js {}",
       "exists": ".eslintrc.js"
     },
     {
