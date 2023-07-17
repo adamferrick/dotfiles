@@ -2,7 +2,7 @@
 
 set desktop "Full Desktop"
 
-set stylus "Wacom Intuos Pro M Pen Stylus"
+set stylus "Wacom Intuos Pro M Pen stylus"
 
 function sf
     set displays "$(xrandr | awk '/ connected / {print $1}')"
