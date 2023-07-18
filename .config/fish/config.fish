@@ -37,7 +37,6 @@ set fish_cursor_replace underscore
 
 
 abbr -a --position anywhere ntags ctags --excmd=number
-abbr -a --position anywhere ff firefox --new-window
 abbr -a --position anywhere wec watchexec -c clear
 
 
