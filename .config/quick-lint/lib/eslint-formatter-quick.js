@@ -8,7 +8,6 @@ module.exports = function(results, context) {
         const logMessage = {
           filePath: path,
           ruleId: msg.ruleId,
-          ruleUrl: context.rulesMeta[msg.ruleId].docs.url,
           message: msg.message,
           line: msg.line,
           column: msg.column,
@@ -46,7 +45,8 @@ module.exports = function(results, context) {
           "\033[0m" + ":" +
           (msg.type === "Error" ? "\033[31m" : "\033[33m") + msg.type +
           "\033[0m" + " " +
-          msg.ruleId + (msg.ruleUrl ? " (" + msg.ruleUrl + ")" : "")
+          msg.message +
+          (msg.ruleId ? "  \033[37m" + msg.ruleId : "")
         );
       })
       .join("\n");
