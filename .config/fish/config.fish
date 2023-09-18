@@ -38,6 +38,7 @@ set fish_cursor_replace underscore
 
 abbr -a --position anywhere ntags ctags --excmd=number
 abbr -a --position anywhere wec watchexec -c clear
+abbr -a ydp yt-dlp -S "'res:480'" -o "'%(playlist_index)s - %(title)s.%(ext)s'"
 
 
 
