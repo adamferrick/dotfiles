@@ -7,6 +7,8 @@ bind O fillcmdline winopen
 bind t fillcmdline tab 
 bind T fillcmdline tabdetach
 bind b fillcmdline bmarks 
+bind w composite js document.location.href | fillcmdline_notrail open 
+bind W composite js document.location.href | fillcmdline_notrail winopen 
 unbind d
 
 guiset_quiet tabs none, guiset_quiet navbar none
