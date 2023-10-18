@@ -16,10 +16,7 @@ hi Visual ctermfg=15 ctermbg=4
 hi Search ctermfg=15 ctermbg=1
 
 
-" MatchParen should be turned off in insert mode
 hi MatchParen ctermfg=15 ctermbg=4
-au InsertEnter * :NoMatchParen
-au InsertLeave * :DoMatchParen
 
 
 " The statusline should be red when there are unsaved changes in the buffer,
