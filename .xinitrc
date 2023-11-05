@@ -52,5 +52,5 @@ fi
 ln -sf ~/.config/i3/visible_titles.conf ~/.config/i3/titles.conf
 
 
-xwallpaper --center ~/wallpapers/galilean-moons.png &
+xwallpaper --center ~/media/wallpapers/galilean-moons.png &
 exec i3
