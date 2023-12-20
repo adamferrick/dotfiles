@@ -2,10 +2,6 @@
 
 call plug#begin()
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-Plug 'nvim-treesitter/playground'
-
 Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-repeat'
@@ -66,23 +62,3 @@ set statusline+=\
 
 
 set guicursor=a:blinkwait400-blinkoff400-blinkon400,n:block,i-ci-ve:ver25,r-cr:hor20
-
-
-
-" plugin-specific config
-
-
-
-" Treesitter
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-    highlight = {
-        enable = true,
-        disable = {},
-    },
-    indent = {
-        enable = true,
-        disable = {},
-    }
-}
-EOF
