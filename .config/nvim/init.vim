@@ -1,21 +1,10 @@
-" Vim-Plug plugins
-
 call plug#begin()
-
 Plug 'tpope/vim-surround'
-
 Plug 'tpope/vim-repeat'
-
 call plug#end()
 
-
-
-
-
-" Space as leader
 nnoremap <SPACE> <Nop>
 let mapleader = " "
-
 
 set number
 
@@ -31,20 +20,15 @@ colorscheme callisto
 
 hi Search ctermbg=8
 
-" use mouse
 set mouse=a
 
 set title
 set titlestring=%m\ %t\ (%f)\ -\ Neovim
 
-
-" Show vertical line on cursor
 nnoremap <Leader>c :set cursorcolumn!<CR>
 
-" Persistent undo
 set undodir=~/.vimdid
 set undofile
-
 
 set laststatus=2
 set statusline=
@@ -58,7 +42,15 @@ set statusline+=\ \ %p%%
 set statusline+=\ \ %l:%c
 set statusline+=\ 
 
-
-
-
 set guicursor=a:blinkwait400-blinkoff400-blinkon400,n:block,i-ci-ve:ver25,r-cr:hor20
+
+" View highlights under the cursor
+function! SynStack ()
+  for i1 in synstack(line('.'), col('.'))
+    let i2 = synIDtrans(i1)
+    let n1 = synIDattr(i1, 'name')
+    let n2 = synIDattr(i2, 'name')
+    echo n1 ' -> ' n2
+  endfor
+endfunc
+nnoremap <Leader>h :call SynStack()<CR>
