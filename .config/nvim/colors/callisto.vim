@@ -55,6 +55,8 @@ hi! link PreProc Keyword
 
 hi! link Special Operator
 
+hi! link SpecialComment Comment
+
 hi! link Macro Function
 hi! link Statement Function
 hi! link htmlTagN Operator
@@ -74,7 +76,6 @@ hi Operator ctermfg=13
 hi PreCondit ctermfg=3
 hi SpecialChar ctermfg=3
 hi Structure ctermfg=3
-hi SpecialComment ctermfg=15
 hi Type ctermfg=10
 hi Todo ctermfg=4
 hi Underlined cterm=underline
