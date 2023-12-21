@@ -59,6 +59,7 @@ hi! link jsArrow Operator
 hi! link pythonStatement Keyword
 hi! link pythonBuiltin Operator
 hi! link pythonClassParameters Type
+hi! link pythonException Keyword
 
 hi! link javaRepeat Keyword
 hi! link javaStructure Keyword
