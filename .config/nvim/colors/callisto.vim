@@ -52,18 +52,21 @@ hi SignColumn ctermbg=1
 "
 hi! link Conditional Keyword
 hi! link PreProc Keyword
-
 hi! link Special Operator
-
 hi! link SpecialComment Comment
-
+hi! link StringDelimiter String
 hi! link Macro Function
 hi! link Statement Function
+
 hi! link htmlTagN Operator
 hi! link htmlTag Operator
 hi! link htmlEndTag Operator
 hi! link htmlTagN Operator
 hi! link htmlTagName Identifier
+
+hi! link pythonStatement Keyword
+hi! link pythonBuiltin Operator
+hi! link pythonClassParameters Type
 
 hi Comment ctermfg=8
 hi Constant ctermfg=9

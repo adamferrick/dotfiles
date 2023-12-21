@@ -1,6 +1,11 @@
 call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'uiiaoo/java-syntax.vim'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'lunacookies/vim-rust-syntax-ext'
+Plug 'kh3phr3n/python-syntax'
 call plug#end()
 
 nnoremap <SPACE> <Nop>
