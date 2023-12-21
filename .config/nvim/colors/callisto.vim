@@ -76,6 +76,9 @@ hi! link pythonStatement Keyword
 hi! link pythonBuiltin Operator
 hi! link pythonClassParameters Type
 
+hi! link javaRepeat Keyword
+hi! link javaStructure Keyword
+
 hi! link rsFor Keyword
 hi! link rsUnderscore Identifier
 hi! link rsModule Identifier
