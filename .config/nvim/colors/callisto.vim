@@ -69,6 +69,12 @@ hi! link jsxOpenPunct htmlTag
 hi! link jsxClosePunct jsxOpenPunct
 hi! link jsxCloseString jsxClosePunct
 
+hi! link jsIdentifier Identifier
+hi! link jsIdentifierProp jsIdentifier
+hi! link jsPrivateIdentifier jsIdentifier
+hi! link jsClassPrivate jsPrivateIdentifier
+hi! link jsVariableType Keyword
+
 hi! link pythonStatement Keyword
 hi! link pythonBuiltin Operator
 hi! link pythonClassParameters Type
