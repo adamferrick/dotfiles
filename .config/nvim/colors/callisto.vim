@@ -1,9 +1,3 @@
-highlight clear
-
-if exists("syntax_on")
-  syntax reset
-endif
-
 hi DiffAdd ctermfg=15 ctermbg=2
 hi DiffChange ctermfg=15 ctermbg=3
 hi DiffDelete ctermfg=15 ctermbg=1
@@ -44,19 +38,23 @@ hi! link Statement Function
 hi! link htmlTagN Operator
 hi! link htmlTag Operator
 hi! link htmlEndTag htmlTag
-hi! link htmlTagName Identifier
+hi! link htmlTagName Type
+hi! link htmlArg Identifier
 hi! link xmlTagName htmlTagName
 hi! link xmlTag htmlTag
 
 hi! link jsxOpenPunct htmlTag
 hi! link jsxClosePunct jsxOpenPunct
 hi! link jsxCloseString jsxClosePunct
+hi! link jsxTagName htmlTagName
+hi! link jsxAttrib htmlArg
 
 hi! link jsIdentifier Identifier
 hi! link jsIdentifierProp jsIdentifier
 hi! link jsPrivateIdentifier jsIdentifier
 hi! link jsClassPrivate jsPrivateIdentifier
 hi! link jsVariableType Keyword
+hi! link jsArrow Operator
 
 hi! link pythonStatement Keyword
 hi! link pythonBuiltin Operator
@@ -72,8 +70,8 @@ hi! link rsModule Identifier
 hi Comment ctermfg=8
 hi Constant ctermfg=9
 hi Error ctermfg=15 ctermbg=1
-hi Function ctermfg=11 cterm=italic
-hi Identifier ctermfg=12 cterm=NONE
+hi Function ctermfg=11
+hi Identifier ctermfg=15 cterm=italic
 hi Keyword ctermfg=5
 hi Label ctermfg=5
 hi Operator ctermfg=13
