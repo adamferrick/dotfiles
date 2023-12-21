@@ -8,6 +8,8 @@ Plug 'lunacookies/vim-rust-syntax-ext'
 Plug 'kh3phr3n/python-syntax'
 call plug#end()
 
+
+
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
@@ -29,6 +31,19 @@ set mouse=a
 
 set title
 set titlestring=%m\ %t\ (%f)\ -\ Neovim
+
+" The statusline should be red when there are unsaved changes in the buffer,
+" blue otherwise.
+hi StatusLine ctermbg=4 cterm=NONE
+function SetStatusBg()
+  if &mod == 1
+    hi StatusLine ctermbg=1
+  else
+    hi StatusLine ctermbg=4
+  endif
+endfunction
+au TextChanged,TextChangedI,BufWritePost,BufEnter * :call SetStatusBg()
+
 
 nnoremap <Leader>c :set cursorcolumn!<CR>
 

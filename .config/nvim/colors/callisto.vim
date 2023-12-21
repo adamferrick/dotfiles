@@ -12,21 +12,7 @@ hi DiffText ctermfg=15 ctermbg=11 cterm=bold
 hi Visual ctermfg=15 ctermbg=4
 hi Search ctermfg=15 ctermbg=1
 
-
 hi MatchParen ctermfg=15 ctermbg=4
-
-
-" The statusline should be red when there are unsaved changes in the buffer,
-" blue otherwise
-hi StatusLine ctermbg=4 cterm=NONE
-function SetStatusBg() 
-  if &mod == 1
-    hi StatusLine ctermbg=1
-  else
-    hi StatusLine ctermbg=4
-  endif
-endfunction
-au TextChanged,TextChangedI,BufWritePost,BufEnter * :call SetStatusBg()
 
 
 " Ui chrome highlights
