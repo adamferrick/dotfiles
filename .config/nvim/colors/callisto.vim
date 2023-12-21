@@ -60,9 +60,14 @@ hi! link Statement Function
 
 hi! link htmlTagN Operator
 hi! link htmlTag Operator
-hi! link htmlEndTag Operator
-hi! link htmlTagN Operator
+hi! link htmlEndTag htmlTag
 hi! link htmlTagName Identifier
+hi! link xmlTagName htmlTagName
+hi! link xmlTag htmlTag
+
+hi! link jsxOpenPunct htmlTag
+hi! link jsxClosePunct jsxOpenPunct
+hi! link jsxCloseString jsxClosePunct
 
 hi! link pythonStatement Keyword
 hi! link pythonBuiltin Operator
