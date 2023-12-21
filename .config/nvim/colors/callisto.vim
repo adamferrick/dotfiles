@@ -4,9 +4,6 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "refraction"
-
-
 hi DiffAdd ctermfg=15 ctermbg=2
 hi DiffChange ctermfg=15 ctermbg=3
 hi DiffDelete ctermfg=15 ctermbg=1
@@ -78,6 +75,10 @@ hi! link jsVariableType Keyword
 hi! link pythonStatement Keyword
 hi! link pythonBuiltin Operator
 hi! link pythonClassParameters Type
+
+hi! link rsFor Keyword
+hi! link rsUnderscore Identifier
+hi! link rsModule Identifier
 
 hi Comment ctermfg=8
 hi Constant ctermfg=9
