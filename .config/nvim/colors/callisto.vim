@@ -43,10 +43,12 @@ hi! link htmlArg Identifier
 hi! link xmlTagName htmlTagName
 hi! link xmlTag htmlTag
 
+hi! link jsxTag htmlTag
 hi! link jsxOpenPunct htmlTag
 hi! link jsxClosePunct jsxOpenPunct
 hi! link jsxCloseString jsxClosePunct
 hi! link jsxTagName htmlTagName
+hi! link jsxComponentName jsxTagName
 hi! link jsxAttrib htmlArg
 
 hi! link jsIdentifier Identifier
