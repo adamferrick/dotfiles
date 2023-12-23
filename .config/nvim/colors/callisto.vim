@@ -43,32 +43,14 @@ hi! link htmlArg Identifier
 hi! link xmlTagName htmlTagName
 hi! link xmlTag htmlTag
 
-hi! link jsxTag htmlTag
-hi! link jsxOpenPunct htmlTag
-hi! link jsxClosePunct jsxOpenPunct
-hi! link jsxCloseString jsxClosePunct
-hi! link jsxTagName htmlTagName
-hi! link jsxComponentName jsxTagName
-hi! link jsxAttrib htmlArg
+hi! link @tag htmlTagName
+hi! link @tag.delimiter htmlTag
+hi! link @tag.attribute htmlArg
 
-hi! link jsIdentifier Identifier
-hi! link jsIdentifierProp jsIdentifier
-hi! link jsPrivateIdentifier jsIdentifier
-hi! link jsClassPrivate jsPrivateIdentifier
-hi! link jsVariableType Keyword
-hi! link jsArrow Operator
-
-hi! link pythonStatement Keyword
-hi! link pythonBuiltin Operator
-hi! link pythonClassParameters Type
-hi! link pythonException Keyword
-
-hi! link javaRepeat Keyword
-hi! link javaStructure Keyword
-
-hi! link rsFor Keyword
-hi! link rsUnderscore Identifier
-hi! link rsModule Identifier
+hi! link @constructor Type
+hi! link @repeat Keyword
+hi! link @type.qualifier Keyword
+hi! link @conditional.ternary Operator
 
 hi Comment ctermfg=8
 hi Constant ctermfg=9

@@ -1,11 +1,7 @@
 call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'uiiaoo/java-syntax.vim'
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'lunacookies/vim-rust-syntax-ext'
-Plug 'kh3phr3n/python-syntax'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 
@@ -64,13 +60,18 @@ set statusline+=\
 
 set guicursor=a:blinkwait400-blinkoff400-blinkon400,n:block,i-ci-ve:ver25,r-cr:hor20
 
-" View highlights under the cursor
-function! SynStack ()
-  for i1 in synstack(line('.'), col('.'))
-    let i2 = synIDtrans(i1)
-    let n1 = synIDattr(i1, 'name')
-    let n2 = synIDattr(i2, 'name')
-    echo n1 ' -> ' n2
-  endfor
-endfunc
-nnoremap <Leader>h :call SynStack()<CR>
+" plugin-specific config
+
+" Treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    disable = {},
+  },
+  indent = {
+    enable = true,
+    disable = {},
+  },
+}
+EOF
