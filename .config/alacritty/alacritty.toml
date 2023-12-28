@@ -1,0 +1,55 @@
+[colors.bright]
+black = "0x485251"
+blue = "0x549ee3"
+cyan = "0xa7e7eb"
+green = "0xc3db69"
+magenta = "0xe89df2"
+red = "0xe06a46"
+white = "0xf6f6f6"
+yellow = "0xe8c95a"
+
+[colors.cursor]
+background = "0xf6f6f6"
+foreground = "0x0f141a"
+
+[colors.normal]
+black = "0x0f141a"
+blue = "0x396c9e"
+cyan = "0x519ca6"
+green = "0x769c51"
+magenta = "0x8c81c9"
+red = "0xb3451d"
+white = "0xbbb1b1"
+yellow = "0xbd7039"
+
+[colors.primary]
+background = "0x0f141a"
+foreground = "0xf6f6f6"
+
+[cursor]
+blink_interval = 800
+blink_timeout = 0
+
+[cursor.style]
+blinking = "Always"
+
+[font.bold]
+family = "BlexMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "BlexMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "BlexMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "BlexMono Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control|Shift"
