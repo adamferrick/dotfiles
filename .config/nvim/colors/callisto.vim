@@ -56,7 +56,7 @@ hi Comment ctermfg=8
 hi Constant ctermfg=9
 hi Error ctermfg=15 ctermbg=1
 hi Function ctermfg=11
-hi Identifier ctermfg=15 cterm=italic
+hi Identifier ctermfg=12 cterm=italic
 hi Keyword ctermfg=5
 hi Label ctermfg=5
 hi Operator ctermfg=13
