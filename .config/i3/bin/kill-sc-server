@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sclang ~/.local/scripts/kill-server.scd

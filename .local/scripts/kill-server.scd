@@ -1,0 +1,1 @@
+s.waitForBoot({Server.quitAll;});
