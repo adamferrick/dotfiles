@@ -1,7 +1,7 @@
 set editorcmd alacritty -e nvim
 set searchengine duckduckgo
 
-bind F hint -F e => {tri.excmds.winopen(browser.extension.inIncognitoContext ? '-private' : '', e.href)}
+bind F hint -F e => {if (browser.extension.inIncognitoContext) tri.excmds.winopen('-private', e.href); else tri.excmds.winopen(e.href);}
 bind O composite js browser.extension.inIncognitoContext ? 'winopen -private' : 'winopen' | fillcmdline
 bind S composite js browser.extension.inIncognitoContext ? 'winopen -private search' : 'winopen search' | fillcmdline
 bind t fillcmdline tab 
