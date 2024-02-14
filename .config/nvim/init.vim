@@ -15,7 +15,7 @@ set scrolloff=3
 
 set expandtab
 set shiftwidth=4 softtabstop=4
-filetype plugin indent on
+filetype plugin indent off
 
 set cursorline
 set background=dark
@@ -66,10 +66,6 @@ set guicursor=a:blinkwait400-blinkoff400-blinkon400,n:block,i-ci-ve:ver25,r-cr:h
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
   highlight = {
-    enable = true,
-    disable = {},
-  },
-  indent = {
     enable = true,
     disable = {},
   },
