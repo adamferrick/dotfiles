@@ -1,2 +1,2 @@
-set noexpandtab
-set softtabstop=0
+setlocal noexpandtab
+setlocal softtabstop=0

@@ -15,7 +15,7 @@ set scrolloff=3
 
 set expandtab
 set shiftwidth=4 softtabstop=4
-filetype plugin indent off
+filetype indent off
 
 set cursorline
 set background=dark
