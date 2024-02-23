@@ -28,6 +28,8 @@ set mouse=a
 set title
 set titlestring=%m\ %t\ (%f)\ -\ Neovim
 
+au BufNewFile,BufRead *.ejs set ft=html
+
 " The statusline should be red when there are unsaved changes in the buffer,
 " blue otherwise.
 hi StatusLine ctermbg=4 cterm=NONE
