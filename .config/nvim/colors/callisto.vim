@@ -52,7 +52,8 @@ hi! link @repeat Keyword
 hi! link @type.qualifier Keyword
 hi! link @conditional.ternary Operator
 
-hi! link @exception.java Keyword
+hi! link @exception Keyword
+
 
 hi Comment ctermfg=8
 hi Constant ctermfg=9
