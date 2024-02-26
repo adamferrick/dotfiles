@@ -29,6 +29,7 @@ set title
 set titlestring=%m\ %t\ (%f)\ -\ Neovim
 
 au BufNewFile,BufRead *.ejs set ft=html
+au BufNewFile,BufRead *.jmd set ft=markdown
 
 " The statusline should be red when there are unsaved changes in the buffer,
 " blue otherwise.
@@ -86,6 +87,7 @@ require'nvim-treesitter.configs'.setup {
     "julia",
     "latex",
     "make",
+    "markdown",
     "python",
     "r",
     "rust",
