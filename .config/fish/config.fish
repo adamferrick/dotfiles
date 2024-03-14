@@ -21,20 +21,7 @@ set -g fish_greeting
 fish_add_path ~/.ghcup/bin
 fish_add_path ~/.local/bin
 
-
-
-# Settings for vi emulation in the shell REPL
-
-fish_vi_key_bindings
-
-function fish_mode_prompt
-end
-
-set fish_cursor_default block
-set fish_cursor_insert line
-set fish_cursor_replace underscore
-
-
+fish_default_key_bindings
 
 abbr -a --position anywhere ntags ctags --excmd=number
 abbr -a --position anywhere wec watchexec -c clear

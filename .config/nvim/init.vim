@@ -61,7 +61,9 @@ set statusline+=\ \ %p%%
 set statusline+=\ \ %l:%c
 set statusline+=\ 
 
-set guicursor=a:blinkwait400-blinkoff400-blinkon400,n:block,i-ci-ve:ver25,r-cr:hor20
+"set guicursor=n:block,i-ci-ve:ver25,r-cr:hor20
+au VimLeave * set guicursor=a:ver25
+set guicursor=n-v-sm:block,i-c-ci-ve:ver25,r-cr-o:hor20
 
 " plugin-specific config
 
