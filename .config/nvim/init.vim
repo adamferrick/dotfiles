@@ -2,7 +2,6 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'IndianBoy42/tree-sitter-just'
 call plug#end()
 
 
