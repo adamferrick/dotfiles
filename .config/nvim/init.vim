@@ -87,6 +87,7 @@ require'nvim-treesitter.configs'.setup {
     "java",
     "javascript",
     "julia",
+    "just",
     "latex",
     "make",
     "markdown",
