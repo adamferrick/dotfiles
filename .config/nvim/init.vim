@@ -30,6 +30,7 @@ set titlestring=%m\ %t\ (%f)\ -\ Neovim
 
 au BufNewFile,BufRead *.ejs set ft=html
 au BufNewFile,BufRead *.jmd set ft=markdown
+au BufNewFile,BufRead justfile set ft=just
 
 " The statusline should be red when there are unsaved changes in the buffer,
 " blue otherwise.
