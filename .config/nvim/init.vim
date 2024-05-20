@@ -19,6 +19,7 @@ filetype indent off
 
 set cursorline
 set background=dark
+set notermguicolors
 colorscheme callisto
 
 hi Search ctermbg=8

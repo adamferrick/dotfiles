@@ -30,8 +30,10 @@ hi SignColumn ctermbg=1
 hi! link Conditional Keyword
 hi! link PreProc Keyword
 hi! link Special Operator
+hi! link Delimiter Operator
 hi! link SpecialComment Comment
 hi! link StringDelimiter String
+hi! link String Constant
 hi! link Macro Function
 hi! link Statement Function
 
@@ -43,6 +45,8 @@ hi! link htmlArg Identifier
 hi! link xmlTagName htmlTagName
 hi! link xmlTag htmlTag
 
+hi! link @module.rust Identifier
+
 hi! link @tag htmlTagName
 hi! link @tag.delimiter htmlTag
 hi! link @tag.attribute htmlArg
@@ -50,6 +54,8 @@ hi! link @tag.attribute htmlArg
 hi! link @constructor Type
 hi! link @repeat Keyword
 hi! link @type.qualifier Keyword
+hi! link @type.builtin Type
+hi! link @variable Identifier
 hi! link @conditional.ternary Operator
 
 hi! link @exception Keyword
@@ -65,7 +71,7 @@ hi Label ctermfg=5
 hi Operator ctermfg=13
 hi PreCondit ctermfg=3
 hi SpecialChar ctermfg=3
-hi Structure ctermfg=3
+hi Structure ctermfg=10
 hi Type ctermfg=10
 hi Todo ctermfg=4
 hi Underlined cterm=underline
