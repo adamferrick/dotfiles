@@ -16,18 +16,33 @@ face global PrimaryCursorEol PrimaryCursor
 
 face global PrimarySelection bright-white,blue
 
+hook global ModeChange (push|pop):insert:.* %{
+    set-face window StatusLine bright-white,blue
+    set-face window LineNumberCursor bright-white,blue+bui
+    set-face window MenuForeground bright-white,blue+bui
+    set-face window PrimarySelection bright-white,blue
+    set-face window Information bright-white,blue
+}
+hook global ModeChange (push|pop):.*:insert %{
+    set-face window StatusLine bright-white,red
+    set-face window LineNumberCursor bright-white,red+bui
+    set-face window MenuForeground bright-white,red+bui
+    set-face window PrimarySelection bright-white,red
+    set-face window Information bright-white,blue
+}
+
 face global LineNumbers bright-black
-face global LineNumberCursor bright-white,blue
+face global LineNumberCursor bright-white,blue+bi
 
 face global StatusLine bright-white,blue
 face global StatusLineInfo bright-white
 face global StatusLineMode StatusLineInfo
-face global Information StatusLine
+face global Information bright-white,blue
 
 face global Error bright-white,red
 
-face global MenuForeground bright-white,blue
 face global MenuBackground bright-white,bright-black
+face global MenuForeground bright-white,blue+bui
 face global MenuInfo bright-white
 
 face global StatusCursor PrimaryCursor
