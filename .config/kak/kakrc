@@ -1,3 +1,34 @@
 colorscheme callisto
 
 add-highlighter global/ number-lines -separator "| " -hlcursor
+
+map global insert <tab> '<a-;><a-gt>'
+map global insert <s-tab> '<a-;><a-lt>'
+set global disabled_hooks .*-indent
+hook global WinCreate [^*]* %{editorconfig-load}
+hook global InsertKey <ret> indent-from-above
+hook global NormalKey o indent-from-above
+hook global NormalKey O indent-from-below
+hook global ModeChange pop:insert:.* trim-indent
+define-command -hidden indent-from-above %{
+    evaluate-commands -draft -itersel %{
+        # Preserve previous line indent
+        try %{ execute-keys -draft <semicolon>K<a-&> }
+        # Clean up whitespace on previous line
+        try %{ execute-keys -draft kx s \h+$ <ret>d }
+    }
+}
+define-command -hidden indent-from-below %{
+    evaluate-commands -draft -itersel %{
+        # Preserve previous line indent (it's a little harder to go going backwards...)
+        try %{ execute-keys -draft <semicolon>Zj<a-L><a-z>a<a-&> }
+        # Clean up whitespace on previous line
+        try %{ execute-keys -draft jx s \h+$ <ret>d }
+    }
+}
+define-command -hidden trim-indent %{
+    evaluate-commands -no-hooks -draft -itersel %{
+        execute-keys x
+        try %{ execute-keys -draft s \h + $ <ret> d }
+    }
+}
