@@ -1,0 +1,3 @@
+colorscheme callisto
+
+add-highlighter global/ number-lines -separator "| " -hlcursor
