@@ -26,18 +26,6 @@ yellow = "0xbd7039"
 background = "0x0f141a"
 foreground = "0xf6f6f6"
 
-[cursor]
-blink_interval = 800
-blink_timeout = 0
-
-[cursor.style]
-shape = "Beam"
-blinking = "Always"
-
-[cursor.vi_mode_style]
-shape = "Block"
-blinking = "Always"
-
 [font.bold]
 family = "BlexMono Nerd Font"
 style = "Bold"
