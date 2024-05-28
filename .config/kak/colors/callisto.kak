@@ -28,7 +28,7 @@ hook global ModeChange (push|pop):.*:insert %{
     set-face window LineNumberCursor bright-white,red+bui
     set-face window MenuForeground bright-white,red+bui
     set-face window PrimarySelection bright-white,red
-    set-face window Information bright-white,blue
+    set-face window Information bright-white,red
 }
 
 face global LineNumbers bright-black
