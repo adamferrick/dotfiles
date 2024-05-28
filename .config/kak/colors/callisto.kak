@@ -47,3 +47,6 @@ face global MenuInfo bright-white
 
 face global StatusCursor PrimaryCursor
 face global Prompt bright-white
+
+face global crosshairs_line default,default+u
+face global crosshairs_column default,default+u

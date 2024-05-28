@@ -1,3 +1,6 @@
+set-option global bundle_path "%sh{ echo $HOME }/.local/share/kak/bundle"
+bundle kak-crosshairs https://github.com/insipx/kak-crosshairs
+
 colorscheme callisto
 
 add-highlighter global/ number-lines -separator "| " -hlcursor
@@ -32,3 +35,5 @@ define-command -hidden trim-indent %{
         try %{ execute-keys -draft s \h + $ <ret> d }
     }
 }
+
+hook -once global WinCreate .* %{cursorline}
