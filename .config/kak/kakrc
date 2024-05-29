@@ -1,6 +1,8 @@
 set-option global bundle_path "%sh{ echo $HOME }/.local/share/kak/bundle"
 bundle kak-crosshairs https://github.com/insipx/kak-crosshairs
 
+eval %sh{ kak-tree-sitter -dks --with-highlighting --session $kak_session }
+
 colorscheme callisto
 
 add-highlighter global/ number-lines -separator "| " -hlcursor
