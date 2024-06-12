@@ -39,3 +39,5 @@ define-command -hidden trim-indent %{
 }
 
 hook -once global WinCreate .* %{cursorline}
+
+map global insert <a-space> <esc>
