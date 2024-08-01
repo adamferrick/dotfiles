@@ -1,0 +1,19 @@
+[language.supercollider.grammar.source.git]
+url = "https://github.com/madskjeldgaard/tree-sitter-supercollider"
+pin = "affa4389186b6939d89673e1e9d2b28364f5ca6f"
+
+[language.supercollider.grammar]
+path = "src"
+compile = "cc"
+compile_args = ["-c", "-fpic", "../scanner.c", "../parser.c", "-I", ".."]
+compile_flags = ["-O3"]
+link = "cc"
+link_args = ["-shared", "-fpic", "scanner.o", "parser.o", "-o", "supercollider.so"]
+link_flags = ["-O3"]
+
+[language.supercollider.queries.source.git]
+url = "https://github.com/helix-editor/helix"
+pin = "8e041c99df8aff8e894263e738faecae41b4cf9b"
+
+[language.supercollider.queries]
+path = "runtime/queries/supercollider"
