@@ -43,3 +43,16 @@ define-command -hidden trim-indent %{
 hook -once global WinCreate .* %{cursorline}
 
 map global insert <a-space> <esc>
+
+# System clipboard
+# y/d yank/delete using internal clipboard and system clipboard at once
+# p - paste from internal clipboard
+# <space>p - paste after from system clipboard
+# <space>P - paste before from system clipboard
+# <space>R - replace selection from system clipboard
+hook global RegisterModified '"' %{ nop %sh{
+    printf %s "$kak_main_reg_dquote" | xclip -in -selection clipboard >&- 2>&-
+}}
+map global user p '<a-!>xclip -out -selection clipboard<ret>'
+map global user P '!xclip -out -selection clipboard<ret>'
+map global user R '|xclip -out -selection clipboard<ret>'
