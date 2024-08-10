@@ -26,6 +26,9 @@ yellow = "0xbd7039"
 background = "0x0f141a"
 foreground = "0xf6f6f6"
 
+[font]
+size = 11
+
 [font.bold]
 family = "BlexMono Nerd Font"
 style = "Bold"
