@@ -1,4 +1,4 @@
-set editorcmd alacritty -e nvim
+set editorcmd alacritty -e kak
 set searchengine duckduckgo
 
 bind F hint -F e => {if (browser.extension.inIncognitoContext) tri.excmds.winopen('-private', e.href); else tri.excmds.winopen(e.href);}
