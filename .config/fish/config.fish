@@ -54,3 +54,5 @@ set -x FZF_DEFAULT_OPTS "--layout 'reverse' --height '95%'"\
 " --color=bg+:$bg,bg:$bg,spinner:$bright_blue,hl:bold:underline:italic:-1"\
 " --color=fg:$fg,header:$bright_magenta,info:$bright_green,pointer:$bright_blue"\
 " --color=marker:$bright_blue,fg+:$fg:bold:underline:italic,prompt:$bright_blue,hl+:reverse:-1"
+
+set -x VCPKG_ROOT ".local/share/vcpkg"
