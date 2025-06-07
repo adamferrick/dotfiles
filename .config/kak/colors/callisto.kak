@@ -65,3 +65,17 @@ set-face global ts_attribute green
 set-face global ts_comment bright-black
 set-face global ts_constructor bright-green
 set-face global ts_property bright-magenta
+
+set-face global ts_markup_bold bright-white+b
+set-face global ts_markup_italic bright-white+i
+set-face global ts_markup_heading bright-green+bui
+set-face global ts_markup_list_checked bright-magenta
+set-face global ts_markup_list_numbered bright-magenta
+set-face global ts_markup_list_unchecked bright-magenta
+set-face global ts_markup_list_unnumbered bright-magenta
+set-face global ts_markup_link_label bright-red
+set-face global ts_markup_link_url bright-red
+set-face global ts_markup_link_uri bright-red
+set-face global ts_markup_link_text bright-red
+set-face global ts_markup_quote default
+set-face global ts_markup_raw default
