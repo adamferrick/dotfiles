@@ -79,3 +79,5 @@ set-face global ts_markup_link_uri bright-red
 set-face global ts_markup_link_text bright-red
 set-face global ts_markup_quote default
 set-face global ts_markup_raw default
+
+set-face global ts_label bright-magenta
