@@ -7,7 +7,6 @@ colorscheme callisto
 
 add-highlighter global/ number-lines -separator "| " -hlcursor
 
-hook global BufCreate .*[.](scd|sc) %{ set buffer filetype supercollider }
 hook global BufCreate .*[.](qss) %{ set buffer filetype css }
 hook global BufCreate .*[.](qmd) %{ set buffer filetype markdown }
 
