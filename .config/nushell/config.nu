@@ -18,6 +18,6 @@ def kf --wrapped [...argv] {
     )} catch { "" }
 
     if $file != "" {
-        kak $file
+        commandline edit $"kak ($file)"
     }
 }
