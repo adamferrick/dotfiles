@@ -6,3 +6,18 @@ $env.PROMPT_COMMAND = { ||
     }
     $"\n(ansi def)(ansi bg_b) (whoami)@(sys host | get hostname) (ansi b)(ansi bg_g)(ansi def) ($env.PWD) (ansi g)($branch)(ansi bg_def)\n"
 }
+
+def kf --wrapped [...argv] {
+    let file = try {(
+        fd -t f --color=always ...$argv |
+        fzf
+            --ansi
+            --delimiter :
+            --preview 'bat --color=always {1}'
+            --preview-window 'down,60%,border-top'
+    )} catch { "" }
+
+    if $file != "" {
+        kak $file
+    }
+}
