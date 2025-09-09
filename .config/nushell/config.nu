@@ -1,3 +1,5 @@
+$env.PATH = ($env.PATH | append '~/.local/bin/')
+
 $env.PROMPT_COMMAND = { ||
     let branch = if (git branch --show-current | complete).exit_code == 0 {
         $"(ansi bg_red)(ansi def) \((git branch --show-current)\) (ansi red)"
