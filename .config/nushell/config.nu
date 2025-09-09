@@ -38,3 +38,19 @@ def kf --wrapped [...argv] {
         commandline edit $"kak ($file)"
     }
 }
+
+def kg --wrapped [...argv] {
+    let match = try {(
+        rg --color=always --trim --line-number --no-heading --smart-case ...$argv |
+        fzf --ansi
+            --delimiter :
+            --preview 'bat --color=always {1} --highlight-line {2}'
+            --preview-window 'down,60%,border-top,+{2}+3/3,~3'
+    )} catch { "" }
+
+    if $match != "" {
+        let split = $match | split row :
+        let file = { path: $split.0, line: $split.1 }
+        commandline edit $"kak ($file.path) +($file.line)"
+    }
+}
