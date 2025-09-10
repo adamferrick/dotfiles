@@ -54,3 +54,52 @@ def kg --wrapped [...argv] {
         commandline edit $"kak ($file.path) +($file.line)"
     }
 }
+
+def kt [] {
+    let color = { |kind|
+        match $kind {
+            "C" => (ansi lr),
+            "s" => (ansi lg),
+            "c" => (ansi lg),
+            "e" => (ansi lg),
+            "g" => (ansi lg),
+            "t" => (ansi lg),
+            "i" => (ansi lg),
+            "P" => (ansi ly),
+            "f" => (ansi ly),
+            _ => (ansi def)
+        }
+    }
+
+    let process_line = { |line|
+        let fields = $line | split row --regex "\\s+"
+        let tag = {
+            name: $fields.0
+            path: $fields.1
+            number: ($fields.2 | str substring ..-3)
+            kind: $fields.3
+            info: (if ($fields | length) == 5 { $" ($fields.4)" } else { "" })
+        }
+        $"(do $color $tag.kind)($tag.name) (ansi lp)($tag.path) (ansi lg)($tag.number) (ansi def)($tag.kind)($tag.info)"
+    }
+
+    let tag = try {(
+        open tags |
+            lines |
+            where not ($it starts-with "!_") |
+            each { do $process_line $in } |
+            str join "\n" |
+            column -t |
+            fzf
+                --ansi
+                --delimiter "\\s+"
+                --preview 'bat --color=always {2} --highlight-line {3}'
+                --preview-window 'down,60%,border-top,+{3}+3/3,~3'
+    )} catch { "" }
+
+    if $tag != "" {
+        let split = $tag | split row --regex "\\s+"
+        let file = { path: $split.1, line: $split.2 }
+        commandline edit $"kak ($file.path) +($file.line)"
+    }
+}
