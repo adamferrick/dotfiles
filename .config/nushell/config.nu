@@ -13,6 +13,42 @@ $env.PROMPT_COMMAND_RIGHT = ""
 
 $env.config.show_banner = false
 
+let bg = '#0f141a'
+let fg = '#f6f6f6'
+let black = '#0f141a'
+let red = '#b3451d'
+let green = '#769c51'
+let yellow = '#bd7039'
+let blue = '#396c9e'
+let magenta = '#655d91'
+let cyan = '#519ca6'
+let white = '#bbb1b1'
+let bright_black = '#485251'
+let bright_red = '#e06a46'
+let bright_green = '#c3db69'
+let bright_yellow = '#e8c95a'
+let bright_blue = '#549ee3'
+let bright_magenta = '#e89df2'
+let bright_cyan = '#a7e7eb'
+let bright_white = '#f6f6f6'
+
+$env.FZF_DEFAULT_OPTS = $"
+    --layout 'reverse'
+    --height '95%'
+    --color=bg+:($bg)
+    --color=bg:($bg)
+    --color=spinner:($bright_blue)
+    --color=hl:bold:underline:italic:-1
+    --color=hl+:reverse:-1
+    --color=fg+:($fg):bold:underline:italic
+    --color=fg:($fg)
+    --color=header:($bright_magenta)
+    --color=info:($bright_green)
+    --color=pointer:($bright_blue)
+    --color=marker:($bright_blue)
+    --color=prompt:($bright_blue)
+"
+
 def lf [] {
     let program = try {(
         $env.PATH |
