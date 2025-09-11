@@ -11,6 +11,8 @@ $env.PROMPT_COMMAND = { ||
 
 $env.PROMPT_COMMAND_RIGHT = ""
 
+$env.config.show_banner = false
+
 def lf [] {
     let program = try {(
         $env.PATH |

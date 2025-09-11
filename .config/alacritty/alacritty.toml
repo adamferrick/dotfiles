@@ -1,3 +1,6 @@
+[terminal]
+shell = "/bin/nu"
+
 [colors.bright]
 black = "0x485251"
 blue = "0x549ee3"
