@@ -1,4 +1,7 @@
-$env.PATH = ($env.PATH | append '/~/.local/bin/')
+$env.PATH ++= [
+    '~/.local/bin/',
+    '~/.cargo/bin/'
+]
 
 $env.PROMPT_COMMAND = { ||
     let branch = if (git branch --show-current | complete).exit_code == 0 {
