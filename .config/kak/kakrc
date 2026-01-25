@@ -1,5 +1,3 @@
-set-option global bundle_path "%sh{ echo $HOME }/.local/share/kak/bundle"
-
 eval %sh{ kak-tree-sitter -dks --init $kak_session }
 
 colorscheme callisto
