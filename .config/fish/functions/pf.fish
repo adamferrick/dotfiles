@@ -19,7 +19,7 @@ function run_command
         case $suspend
             systemctl suspend
         case $lock
-            ~/.config/i3/bin/lock.sh
+            lock
     end
 end
 
