@@ -55,3 +55,7 @@ hook global RegisterModified '"' %{ nop %sh{
 map global user p '<a-!>xclip -out -selection clipboard<ret>'
 map global user P '!xclip -out -selection clipboard<ret>'
 map global user R '|xclip -out -selection clipboard<ret>'
+
+set-option global indentwidth 4
+hook global BufCreate .*[.](yml) %{ set-option buffer indentwidth 2 }
+hook global BufCreate .*[.](yaml) %{ set-option buffer indentwidth 2 }
