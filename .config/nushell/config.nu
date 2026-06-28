@@ -17,6 +17,7 @@ $env.PROMPT_COMMAND_RIGHT = ""
 $env.config.show_banner = false
 
 $env.EDITOR = "kak"
+$env.BROWSER = "qutebrowser"
 
 let bg = '#0f141a'
 let fg = '#f6f6f6'
