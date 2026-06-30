@@ -4,17 +4,19 @@ c.content.blocking.method = 'both'
 
 config.set('content.headers.user_agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36')
 
+config.bind('F', 'hint all window')
+
+
+config.bind('pw', 'spawn --userscript qute-pass', mode='normal')
+config.bind(',u', 'spawn --userscript qute-pass --username-only', mode='normal')
+config.bind(',p', 'spawn --userscript qute-pass --password-only', mode='normal')
+
+
 c.window.title_format = "{private}{current_title}{title_sep}qutebrowser"
 c.colors.webpage.darkmode.enabled = True
 
-config.bind('F', 'hint all window')
-
 c.fonts.default_family = 'BlexMono Nerd Font'
 c.fonts.default_size = '11pt'
-
-
-
-
 
 black = "#0f141a"
 blue = "#396c9e"
