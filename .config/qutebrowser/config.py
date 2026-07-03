@@ -215,7 +215,7 @@ c.colors.statusbar.command.bg = blue
 c.colors.statusbar.command.private.fg = bright_white
 
 # Background color of the statusbar in private browsing + command mode.
-c.colors.statusbar.command.private.bg = black
+c.colors.statusbar.command.private.bg = blue
 
 # Foreground color of the statusbar in caret mode.
 c.colors.statusbar.caret.fg = bright_white
