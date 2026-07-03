@@ -6,6 +6,8 @@ config.set('content.headers.user_agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x
 
 config.bind('F', 'hint all window')
 
+config.bind('<Alt-Space>', 'mode-leave', mode='insert')
+config.bind('<Alt-Space>', 'mode-leave', mode='caret')
 
 config.bind('pw', 'spawn --userscript qute-pass', mode='normal')
 config.bind(',u', 'spawn --userscript qute-pass --username-only', mode='normal')
@@ -221,7 +223,7 @@ c.colors.statusbar.command.private.bg = blue
 c.colors.statusbar.caret.fg = bright_white
 
 # Background color of the statusbar in caret mode.
-c.colors.statusbar.caret.bg = black
+c.colors.statusbar.caret.bg = blue
 
 # Foreground color of the statusbar in caret mode with a selection.
 c.colors.statusbar.caret.selection.fg = bright_white
