@@ -42,6 +42,7 @@ define-command -hidden trim-indent %{
 hook -once global WinCreate .* %{cursorline}
 
 map global insert <a-space> <esc>
+map global prompt <a-space> <esc>
 
 # System clipboard
 # y/d yank/delete using internal clipboard and system clipboard at once

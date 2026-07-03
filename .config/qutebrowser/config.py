@@ -7,6 +7,7 @@ config.set('content.headers.user_agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x
 config.bind('F', 'hint all window')
 
 config.bind('<Alt-Space>', 'mode-leave', mode='insert')
+config.bind('<Alt-Space>', 'mode-leave', mode='command')
 config.bind('<Alt-Space>', 'mode-leave', mode='caret')
 
 config.bind('pw', 'spawn --userscript qute-pass', mode='normal')
